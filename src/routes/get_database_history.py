@@ -1,4 +1,5 @@
 from fastapi import APIRouter, Security
+
 from src.routes.utils.api_key import get_api_key
 from src.routes.utils.database import table
 

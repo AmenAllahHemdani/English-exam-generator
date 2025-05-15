@@ -1,4 +1,3 @@
-
 def PROMPT(chapter_name):
     return f"""
     You are an educational assistant generating high school-level reading comprehension exercises. Based on a given chapter title, follow the steps below and output the result as a **valid JSON object**. Each part must be under its respective key in the final JSON. Do NOT include markdown or extra text. Only return the JSON.

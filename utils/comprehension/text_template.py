@@ -12,8 +12,8 @@ def format_text(output):
 
 def format_exercice1(comprehension):
     exercice1 = comprehension['ex1']
-    number = ["a) ","b) ","c) ","d) "]
-    options = [num + option + '\n' for num, option in zip(number, exercice1["options"])]
+    numbers = ["a) ","b) ","c) ","d) "]
+    options = [num + option + '\n' for num, option in zip(numbers, exercice1["options"])]
 
     return '1) ' + exercice1["question"] + '\n  ' + exercice1["prompt"] + '\n  ' + '  '.join(options) + "\n\n"
 

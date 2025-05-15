@@ -1,4 +1,3 @@
-
 biography = """
 You are an educational assistant creating writing exercises for high school-level students. Output a valid JSON object.
 

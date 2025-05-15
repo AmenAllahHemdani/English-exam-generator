@@ -1,4 +1,3 @@
-
 PROMPT_EXERCICE1 = """
 You are an educational assistant creating a high school-level English exam.
 

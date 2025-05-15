@@ -6,11 +6,8 @@ blank = '.............................................................'
 
 def format_writing1(output,topic):
     json_result = json.loads(output)
-
     result = '1) ' + json_result['type'] + '\n ' + json_result['instructions'] + '\n\n'
-
     for item, value in json_result['notes'].items():
-
         if topic == 1:
             result += "  " + item + ') ' + ' | '.join(value) + '\n'
         else:

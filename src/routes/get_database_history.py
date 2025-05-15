@@ -8,4 +8,8 @@ router = APIRouter()
 
 @router.get("/get_database_history")
 async def get_database_history(api_key: str = Security(get_api_key)):
-  return {'history' : table.find({},{"_id": 0}).sort("date",-1)}
+  result = []
+  data = table.find({},{"_id": 0}).sort("date",-1)
+  for item in data:
+    result.append(item)
+  return result
